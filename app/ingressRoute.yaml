@@ -12,8 +12,3 @@ spec:
       services:
         - name: whoami
           port: 80
-    - match: Host(`argocd.great-demo.com`) && PathPrefix(`/`)
-      kind: Rule
-      services:
-        - name: argocd-server
-          port: 80
